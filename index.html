@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 添加 Favicon 鏈接 -->
+  <link rel="icon" href="img/try/icon.ico" type="image/x-icon">
+  <title>情緒交換所</title>
+  <link rel="stylesheet" href="clothes.css">
+</head>
+<body>
+
+  <audio id="backgroundMusic" loop>
+    <source src="img/try/bgmusic.mp3" type="audio/mp3">
+  </audio>
+
+
+<div id="main">
+  <!--主畫面上的按鈕們-->
+  <!-- 按鈕1景美夜市正反ok -->
+  <div class="button button1" onclick="openModal('firstModal')">
+    <img src="img/try/button/button1.png" alt="Button 1" height="185px">
+  </div>
+  <!-- 按鈕2景美捷運站正反ok -->
+  <div class="button button2" onclick="openModal('thirdModal')">
+    <img src="img/try/button/button2.png" alt="Button 2" height="100px">
+  </div>
+  <!-- 按鈕3文山二分局1 -->
+  <div class="button button3" onclick="openModal('seventhModal')">
+    <img src="img/try/button/button3.png" alt="Button 3" height="380px">
+  </div>
+  <!-- 按鈕4ubike1ok -->
+  <div class="button button4" onclick="openModal('fifthModal')">
+    <img src="img/try/button/button4.png" alt="Button 4" height="160px">
+  </div>
+  <!-- 按鈕5coming soon1ok -->
+  <div class="button button5" onclick="openModal('sixthModal')">
+    <img src="img/try/button/button5.png" alt="Button 5" height="220px">
+  </div>
+  <!-- 按鈕6世新大學公車站正反 -->
+  <div class="button button6" onclick="openModal('ninthModal')">
+    <img src="img/try/button/button6.png" alt="Button 6" height="120px">
+  </div>
+   <!-- 按鈕7空白 -->
+   <div class="button button7" onclick="openModal('eighthModal')">
+    <img src="img/try/button/button7.png" alt="Button 7" height="50px">
+  </div>
+  <!-- Add more buttons as needed -->
+
+
+  <!-- 景美夜市1 -->
+  <div class="modal" id="firstModal" >
+    <div class="modal-content">
+        <!-- 1.關閉模態框的按鈕 -->
+        <span class="close" onclick="closeModal('firstModal')">&times;</span>
+
+ <!-- 放置內容-->
+    <div class="uppic"><img src="img/try/modal/market/uppic1.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --> </div>
+    <div class="videocontainer">
+      <video controls>
+        <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/marketvideo1.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064525Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=d8d59b096ab34688f61bac07ffc43b8188a7904e4df22f0892076c020a0bb72b" type="video/mp4">  <!-- 影片、照片 -->
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="wordcontainer"><img src="img/try/modal/market/wordpic1.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+    <div class="but" onclick="closeFirstAndOpenSecond()">  <!--第二個視窗按鈕 -->
+      <img class="custom-button" src="img/try/modal/but.png" alt="Switch Button" height="100px">
+    </div>
+
+    </div>
+  </div>
+
+  <!-- 景美夜市2 -->
+  <div class="modal" id="secondModal">
+    <div class="modal-content">
+      <!-- 1.關閉模態框的按鈕 -->
+      <span class="close" onclick="closeModal('secondModal')">&times;</span>
+
+      <!-- 放置內容-->
+      <div class="uppic"><img src="img/try/modal/market/uppic12.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+      <div class="videocontainer">
+        <video controls>
+         <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/marketvideo2.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064545Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=10ff93b2993d2417d2294c0d02509c4cab3a21e476c53b3ef34159589a9f0784" type="video/mp4">  <!-- 影片、照片 -->
+          Your browser does not support the video tag.
+       </video>
+      </div>
+      <div class="wordcontainer"><img src="img/try/modal/market/wordpic12.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+      <div class="but" onclick="closeSecondAndOpenFirst()">  <!--第二個視窗按鈕 -->
+        <img class="custom-button" src="img/try/modal/but2.png" alt="Switch Button" height="100px">
+      </div>
+    </div>
+  </div>
+
+
+
+
+ <!-- 景美捷運站3 -->
+ <div class="modal" id="thirdModal" >
+  <div class="modal-content">
+       <!-- 1.關閉模態框的按鈕 -->
+       <span class="close" onclick="closeModal('thirdModal')">&times;</span>
+<!-- 放置內容-->
+  <div class="uppic"><img src="img/try/modal/mrt/uppic2.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+  <div class="videocontainer">
+    <video controls>
+      <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/mrt1.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064603Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=af26aeccbcbb742c2138f55d7b8b00ecd57358fc517b273dede817c4490f2a8a" type="video/mp4">  <!-- 影片、照片 -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="wordcontainer"><img src="img/try/modal/mrt/wordpic2.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+  <div class="but" onclick="closeThirdAndOpenFourth()">  <!--第二個視窗按鈕 -->
+    <img class="custom-button" src="img/try/modal/but.png" alt="Switch Button" height="100px">
+  </div>
+
+  </div>
+</div>
+
+<!-- 景美捷運站4 -->
+<div class="modal" id="fourthModal">
+  <div class="modal-content">
+    <!-- 1.關閉模態框的按鈕 -->
+    <span class="close" onclick="closeModal('fourthModal')">&times;</span>
+
+    <!-- 放置內容-->
+    <div class="uppic"><img src="img/try/modal/mrt/uppic22.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+    <div class="videocontainer">
+      <video controls>
+       <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/2.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064244Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=903b34707cd260ebbec6379b62b34d0bd42eb54da652b6c5a5816b35d7a959e5" type="video/mp4">  <!-- 影片、照片 -->
+        Your browser does not support the video tag.
+     </video>
+    </div>
+    <div class="wordcontainer"><img src="img/try/modal/mrt/wordpic22.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+    <div class="but" onclick="closeFourthAndOpenThird()">  <!--第二個視窗按鈕 -->
+      <img class="custom-button" src="img/try/modal/but2.png" alt="Switch Button" height="100px">
+    </div>
+  </div>
+</div>
+
+
+ <!-- ubike5 -->
+ <div class="modal" id="fifthModal" >
+  <div class="modal-content">
+       <!-- 1.關閉模態框的按鈕 -->
+       <span class="close" onclick="closeModal('fifthModal')">&times;</span>
+<!-- 放置內容-->
+  <div class="uppic"><img src="img/try/modal/ubike/uppic5.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+  <div class="videocontainer">
+    <video controls>
+      <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/ubike.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064709Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=a84e664bc587ccc12a2c40929565b7362eb74d3d440cda707b42ee68794031e7" type="video/mp4">  <!-- 影片、照片 -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="wordcontainer"><img src="img/try/modal/ubike/wordpic5.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+  </div>
+</div>
+
+
+ <!-- coming6 -->
+ <div class="modal" id="sixthModal" >
+  <div class="modal-content">
+     <!-- 1.關閉模態框的按鈕 -->
+     <span class="close" onclick="closeModal('sixthModal')">&times;</span>
+<!-- 放置內容-->
+  <div class="uppic"><img src="img/try/modal/coming/uppic6.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+  <div class="videocontainer">
+    <video controls>
+      <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/coming.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064419Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=078162bcdba03b364c7e563ad62aaa470423346a2c956a35d6ebbc4f85b50a26" type="video/mp4">  <!-- 影片、照片 -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="wordcontainer"><img src="img/try/modal/coming/wordpic62.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+  </div>
+</div>
+
+
+ <!-- 文山二分局7 -->
+ <div class="modal" id="seventhModal" >
+  <div class="modal-content">
+     <!-- 1.關閉模態框的按鈕 -->
+     <span class="close" onclick="closeModal('seventhModal')">&times;</span>
+<!-- 放置內容-->
+  <div class="uppic"><img src="img/try/modal/stop2/uppic7.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+  <div class="videocontainer">
+    <video controls>
+      <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/stop2.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064646Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=98fee2c187027ab59afc78292455ecf504f15d3ca7ef04ea9879990e279e2d1b" type="video/mp4">  <!-- 影片、照片 -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  </div>
+</div>
+
+ <!-- 空白8 -->
+ <div class="modal" id="eighthModal" >
+  <div class="modal-content">
+     <!-- 1.關閉模態框的按鈕 -->
+     <span class="close" onclick="closeModal('eighthModal')">&times;</span>
+<!-- 放置內容-->
+  <div class="uppic"><img src="img/try/modal/nothing/uppic8.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --></div>
+  <div class="videocontainer">
+    <video controls>
+      <source src="https://emotionfinal.s3.ap-southeast-1.amazonaws.com/nothing.mp4?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEAwaDmFwLW5vcnRoZWFzdC0yIkcwRQIgVjILYMfkaiEnGyEiOZeXrJRxYywRyzXVmBlQzSx%2BgZwCIQCmvZNZqtQDIgqM7eHHBAlO3uqJbYz%2FdzaxNk9yfVTACirtAgiF%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDM3MTc3NTg4NTMyMiIMUjoZQenKP%2BPp64a3KsECrnMll3VKkLEQf1HdkaFkATtIR1std0dBANGImunskNYBp%2FhU7338p5T6EpcstupzVWaIUoSrFx%2FoEXotqGW6Rm2A7aHx0cgt5ole7pwxVJIUJwcqqrNLPeDsH%2BHG9cGoB7EPg6nmuxBzIRwMExhoBKkf%2Bf665kzRSNC9BAn0EBAvATSDRP9OF0%2BFqPiWES0kyArGHzoFT3Ek2NlWFvVin3iyn1VN%2Bul7p11bro5M51xKRWe7d7h9Ti2MZWcpnh1YGmprk96nMwXhOGYTqZai5X0DJoWuSb4Q%2B5qCXkXt6CFwi3tFDuk3HYVBvlv9kjzwumIwniYtQvEs2qBYLj5E1IOAtdeDviVXBl27mHK5bMMDfMIk7Eoo6ieNXtHaytXkO2X%2FVT8n9isBAr6e0%2BLvViAWzS3jJyNPQ5rAepNYLERiMLDG9KsGOrMCEVrkKsP5fJtW4DA9hIRhTxDHWuk5LRXs5WVqwdK08q%2Bm7ZHOaZzlcOgGlUH%2FygEcaffASzAqWqeYmPM6%2B%2F9T0qnDN7BRV%2FREblbdesd4%2BQjdg67H4aRT9EIxqUfBRG4jAh%2FxRdQ4wEVULYhOitmqA8L6N0w%2FGV%2BlgBjPBz8SI5pPawUiP6L3wbZ8oG1MhusMIPcfQnXh0%2BmVwGQZtCPGNoqBzU%2FlTHdWGkOUJUndnB%2FVc2Y7DjBvBobdiHh9NpuaPOtEWn3LZzyGIoHrXDPsc%2FO8d%2FoBZ5xPyRY%2FsERt2NAfDaojyjNDstOM4z2YWsAGwlTQ3B4P19uoDcRG7IH91Q1iLbwntdQ7J%2BcP84MgvAkkj4jCseICHRicvFsER73yVpr2U01JTs4MEs9pc7hZ7Il8cA%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231216T064621Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAVND4R2AFNJT4OPXX%2F20231216%2Fap-southeast-1%2Fs3%2Faws4_request&X-Amz-Signature=7ac527067d76c782794b49cd749433b7ae80ab5ab054e71de77eb877f26fdf77" type="video/mp4">  <!-- 影片、照片 -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  </div>
+</div>
+
+
+  <!-- 世新公車站1 -->
+  <div class="modal" id="ninthModal" >
+    <div class="modal-content">
+
+ <!-- 放置內容-->
+    <div class="uppic"><img src="img/try/modal/busstop/uppic9.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --> </div>
+<!-- 按鈕圖片 -->
+
+<!-- 將音樂元素的 id 設定為 "modalAudio1" -->
+<audio id="modalAudio1" loop>
+  <source src="img/try/modal/busstop/busmusic.mp3" type="audio/mp3">
+</audio>
+
+<!-- 修改按鈕的 onclick 事件，傳遞音樂元素的 id -->
+<div class="mus" onclick="playMusic('modalAudio1')">  
+  <img class="musicbutton" src="img/try/modal/busstop/musicfish.png" alt="play" height="170px">
+</div>
+
+
+    <div class="busstopcontainer" id="busstop">
+      <div class="fish fish1"><img src="img/try/modal/busstop/3.jpg" alt="fish" > </div> 
+      <div class="fish fish2"><img src="img/try/modal/busstop/4.jpg" alt="fish" > </div>
+      <!--頂端圖片，不動 --> </div>
+      <div class="wordcontainer word9"><img src="img/try/modal/busstop/wordpic9.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+      <div class="busstopcontainer" id="busstop">
+        <div class="fish fish3"><img src="img/try/modal/busstop/2.jpg" alt="fish" > </div>
+        <div class="fish fish4"><img src="img/try/modal/busstop/1.jpg" alt="fish" > </div> 
+        <!--頂端圖片，不動 --> </div>
+
+    <div class="but" onclick="closeNinthAndOpenTenth()">  <!--第二個視窗按鈕 -->
+      <img class="custom-button" src="img/try/modal/but.png" alt="Switch Button" height="100px">
+    </div>
+
+    <audio id="modalAudio1" loop>
+      <source src="img/try/modal/busstop/busmusic.mp3" type="audio/mp3">
+    </audio>
+
+    </div>
+  </div>
+
+  <!-- 世新公車站2 -->
+  <div class="modal" id="tenthModal">
+    <div class="modal-content">
+      <!-- 1.關閉模態框的按鈕 -->
+      <span class="close" onclick="closeModal('tenthModal')">&times;</span>
+
+ <!-- 放置內容-->
+    <div class="uppic"><img src="img/try/modal/busstop/uppic92.png" alt="最上面的圖" width="900px">  <!--頂端圖片，不動 --> </div>
+
+    <!-- 將音樂元素的 id 設定為 "modalAudio1" -->
+<audio id="modalAudio2" loop>
+  <source src="img/try/modal/busstop/busmusic2.mp3" type="audio/mp3">
+</audio>
+
+<!-- 修改按鈕的 onclick 事件，傳遞音樂元素的 id -->
+<div class="mus" onclick="playMusic('modalAudio2')">  
+  <img class="musicbutton" src="img/try/modal/busstop/musicfish.png" alt="play" height="170px">
+</div>
+
+
+    <div class="busstopcontainer2" id="busstop">
+    <div class="fish fish5"><img src="img/try/modal/busstop/32.jpg" alt="fish" > </div> 
+    <div class="fish fish6"><img src="img/try/modal/busstop/42.jpg" alt="fish" > </div>
+    </div>
+
+    <div class="wordcontainer word92"><img src="img/try/modal/busstop/wordpic92.png" alt="文字圖" width="900px">  <!-- 文字圖片 --></div>
+
+    <div class="busstopcontainer2" id="busstop">
+     <div class="fish fish7"><img src="img/try/modal/busstop/22.jpg" alt="fish" > </div>
+     <div class="fish fish8"><img src="img/try/modal/busstop/12.jpg" alt="fish" > </div> 
+     </div>
+
+      <div class="but" onclick="closeTenthAndOpenNinth()">  <!--第二個視窗按鈕 -->
+        <img class="custom-button" src="img/try/modal/but2.png" alt="Switch Button" height="100px">
+      </div>
+      <audio id="modalAudio2" loop>
+        <source src="img/try/modal/busstop/busmusic2.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </div>
+
+
+  <script src="move.ini"></script>
+</div>
+
+</body>
+</html>

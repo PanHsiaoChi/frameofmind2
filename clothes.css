@@ -1,0 +1,233 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('img/try/bg2.jpg'); /* 設定背景圖片的路徑1920x900、1800x800 */
+  background-size: cover; /* 使背景圖片充滿整個畫面 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#main {
+  position: relative;
+  height: 300px; /* 設定主畫面的高度 */
+}
+
+.button {
+  cursor: pointer;
+  position: absolute; /* 絕對定位，使按鈕根據其父元素（#main）定位 */
+  margin: 10px;
+}
+
+.button img {
+  width: 100%; /* 使圖片填滿 button 區域 */
+}
+
+.button1 { /*景美夜市*/
+  top: 350px; /* 距離上邊緣的距離 */
+  left: 750px; /* 距離左邊緣的距離 */
+  /*transform: rotate(10deg); 調整按鈕旋轉角度*/
+}
+
+.button2 { /*捷運站*/
+  top: 550px;
+  left: 230px;
+}
+
+.button3 { /*文山二分局*/
+  top: 118px;
+  right: 1490px;
+}
+
+.button4 { /*腳踏車*/
+  top: 350px;
+  left: 440px;
+}
+
+.button5 { /*紅綠燈*/
+  top: 280px;
+  left: 1270px;
+}
+
+.button6 { /*世新公車站*/
+  top: 380px;
+  left: 1350px;
+}
+
+.button7 { /*空白草叢*/
+  top: 550px;
+  left: 750px;
+}
+
+/* Add more button styles as needed */
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /*模態框周圍透明度和顏色調整*/
+
+
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  max-width: 100%;
+  max-width: 1400px; /*框框的寬度*/
+  background-image: url('img/try/modal/artworkbg.jpg'); /* 底圖路徑 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fefefe; /*框框背景色*/
+  padding: 40px; /*框框內的邊界大小*/
+  text-align: center;  /*內容置中對齊 */
+  display: flex; /*使用flexbox布局*/
+  flex-direction: column; /*子元素垂直排列 */
+
+}
+
+.busstopcontainer img{
+  width: 800px;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.fish1{
+  margin-right: 450px;
+  transform: rotate(-1.5deg);
+  margin-top: 5px;
+}
+
+.fish2{
+  margin-left: 450px;
+  transform: rotate(1.5deg);
+}
+
+.fish3{
+  margin-right: 450px;
+  transform: rotate(-1.5deg);
+}
+
+.fish4{
+  margin-left: 450px;
+  transform: rotate(1.5deg);
+  margin-bottom: 30px;
+}
+
+.word9{
+  transform: rotate(-1deg);
+  margin-right: 300px; 
+}
+
+
+.busstopcontainer2 img{
+  width: 800px;
+  margin-top: 1px;
+  margin-bottom: 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+
+.fish5{
+  margin-right: 400px;
+  transform: rotate(0deg);
+  margin-top: 5px;
+}
+
+.fish6{
+  margin-left: 400px;
+  transform: rotate(0deg);
+}
+
+.fish7{
+  margin-right: 400px;
+  transform: rotate(0deg);
+  margin-top: 30px;
+}
+
+.fish8{
+  margin-left: 400px;
+  transform: rotate(0deg);
+  margin-bottom: 30px;
+}
+
+.word92{
+  transform: rotate(-3deg);
+  margin-left: 200px; 
+}
+
+.mus{
+  margin-left: 1000px;
+  transform: rotate(25deg);
+}
+
+/* 假設您的按鈕類別是 "custom-button" */
+img.custom-button {
+  cursor: pointer;
+  width: 80px; /* 設置寬度 */
+  height: 80px; /* 設置高度 */
+  margin: 0.2em; /* 設置邊距 */
+  margin-left: 1200px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加陰影效果 */
+}
+
+/* 滑鼠懸停時的效果，例如改變顏色或放大縮小 */
+img.custom-button:hover {
+  filter: brightness(1.2); /* 亮度增強 */
+  transform: scale(1.1); /* 放大 10% */
+}
+
+
+
+/* 影片區域樣式，使其置中 */
+.videocontainer{
+  vertical-align: top; /*水平向上對齊*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+video{
+  width: 1200px; /*影片寬度*/
+  margin-bottom: 20px;
+}
+
+.wordcontainer{
+  margin-right: 400px;
+}
+
+/* 以下為新增的樣式，用於關閉模態框的按鈕 */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+/*
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+*/
